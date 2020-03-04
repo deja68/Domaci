@@ -4,8 +4,8 @@
     box-sizing: border-box;
 }
 body{
-    padding: 1em 2em 1em 2em;
-    margin: 1em 2em ;
+    padding: 1em ;
+    margin: 1em  ;
 }
 .flex-container{
    display: flex;
@@ -14,17 +14,45 @@ body{
 }
 .nav{
     display: flex;
-    background-color: lightgreen;
 }
 ul{
     list-style-type: none;
 }
 ul li{
-    padding: 5px;
+    padding: 10px;
+}
+a{
+    color:#3A4151;
+    font-weight: bold;
 }
 #btn{
-    display: flex;
+    display: relative;
+    float: right;
+    z-index: 1;
+}
+button{
+    border-radius: 40px;
+    padding: 10px;
+    background-color: #FB5253;
+    color: white;
+    border:none;
+}
+
+#circles{
+    width: 40%;
+    height: 40%;
+    float: right;
+    bottom: 50%;
+    transform: translate(60%,-50%);
     
+}
+input{
+    border-radius: 40px;
+    border:none;
+    height:30px;
+    width: 180px;
+    margin: 10px;
+    padding: 10px;
 }
 img{
     width: 70px;
@@ -57,9 +85,10 @@ img{
 }
 .centerTxt{
     text-align: center;
+    
 }
 
-#arrow{
+.arrow{
     width: 1.7vw;
     height: 1.7vh;
 }
@@ -94,6 +123,43 @@ img{
     z-index:-2;
     opacity: 1;
 }
+.pic{
+    position:relative;
+    margin-top: 5%;
+}
+.pic > img{
+    width:15vw;
+    height: 25vh;
+}
+#group{
+    z-index:-1;   
+}
+#top-pic{
+    position: absolute;
+    left: 5%;
+    bottom: 35%;
+}
+#elipsa{
+    position: absolute;
+    bottom: 30%;
+    left: 7%;
+    z-index: -2;
+}
+.row {
+    display: flex;
+}
+.comment{
+    width:30vw;
+    height:30vh;
+}
+  /* Create three equal columns that sits next to each other */
+.column {
+    flex: 33.33%;
+    justify-content: center;
+    padding: 10px;
+    margin:10px;
+}
+
 /*
 #secondImg{
     position: relative;

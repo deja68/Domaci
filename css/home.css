@@ -67,7 +67,7 @@ button{
     padding: 1em;
     float: left;
     width: 50%;
-    background-color: yellow;
+    
 }
 .firstDiv p {
     padding:10px;
@@ -82,7 +82,7 @@ button{
     float: left;
     width: 50%;
     height: 445px;
-    background-color: powderblue;
+    
 }
 
 input{
@@ -127,22 +127,24 @@ input{
 #leftClass{
     float:left;
     width: 20%;
-    background-color: aquamarine;
+    height: 280px;
+    
 }
 #leftClass img{
     width: 30%;
     position: relative;
-    transform: translate(-120%, -10%);
+    transform: translate(-160%, -10%);
 }
 #middleClass{
     float:left;
     width:50%;
-    background-color: burlywood;
+    
 }
 #rightClass{
     float:left;
     width: 30%;
-    background-color: purple;
+    height: 280px;
+    
 }
 #rightClass img{
     width: 100%;
@@ -188,7 +190,7 @@ h3{
     float: left;
     width: 55%;
     height: 394px;
-    background-color: powderblue;
+    
 }
 
 .left{
@@ -196,7 +198,7 @@ h3{
     float: left;
     width: 45%;
     height: 394px;
-    background-color: lightgray;
+   
 }
 .left img {
     width: 100%;
@@ -262,7 +264,6 @@ h3{
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    body{background:lightgrey;}
     h3{
         margin-top: 3rem;
         margin-bottom: 1.5rem;
@@ -299,13 +300,12 @@ h3{
         height: auto;
         padding-bottom: 10px;
         margin-bottom:10px;
-        background-color: powderblue;
+        
     }
     .firstDiv{
         padding: 1em;
         float: left;
         width: 100%;
-        background-color: yellow;
         text-align: center;
         vertical-align: middle;   
     }
@@ -314,7 +314,6 @@ h3{
         grid-template-columns: 100px 100px 100px;
         grid-template-rows: 80px 80px 80px; 
         align-content: space-evenly;
-        background-color: lightcoral;
         justify-items: center;
         align-items: center;
         padding: 10px;
@@ -325,8 +324,8 @@ h3{
     }
     #middleClass{
         width:100%;
-        background-color: burlywood;
     }
+
     /*
     #secondImg, #thirdImg{
         position: absolute;
@@ -335,7 +334,6 @@ h3{
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) and (max-width:767px) {
-    body{background: purple;}
     h3{
         margin-top: 3rem;
         margin-bottom: 1.5rem;
@@ -369,13 +367,11 @@ h3{
         height: auto;
         padding-bottom: 10px;
         margin-bottom:10px;
-        background-color: powderblue;
     }
     .firstDiv{
         padding: 1em;
         float: left;
         width: 100%;
-        background-color: yellow;
         text-align: center;
         vertical-align: middle;   
     }
@@ -387,7 +383,6 @@ h3{
         grid-template-columns: 100px 100px 100px;
         grid-template-rows: 80px 80px 80px; 
         align-content: space-evenly;
-        background-color: lightcoral;
         justify-items: center;
         align-items: center;
         padding: 10px;
@@ -398,12 +393,10 @@ h3{
     }
     #middleClass{
         width:100%;
-        background-color: burlywood;
     }
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width:991px) {
-    body{background: powderblue;}
     #btn{
         position: absolute;
         top: 5%;
@@ -417,13 +410,11 @@ h3{
         padding: 1em;
         float: left;
         width: 65%;
-        background-color: yellow;
     }
     .pictures{
         float: left;
         width: 35%;
         height: 475px;
-        background-color: powderblue;
     }
     
     .grid_container{
@@ -453,7 +444,6 @@ h3{
 } 
  /* Large devices (laptops/desktops, 992px and up) */
  @media only screen and (min-width: 992px) and (max-width:1199px) {
-    body{background: orange;}  
     #btn{
         position: absolute;
         top: 3%;
@@ -480,7 +470,6 @@ h3{
 }
  /* Extra large devices (large laptops and desktops, 1200px and up) */
  @media only screen and (min-width: 1200px) {
-    body{background: pink;}
     #btn{
         position: absolute;
         top: 3%;

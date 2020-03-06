@@ -61,6 +61,7 @@ button{
     height: 150%;
     position: relative;
     transform: translate(2%, -40%);
+    
 }
 .firstDiv{
     padding: 1em;
@@ -80,32 +81,9 @@ button{
 .pictures{
     float: left;
     width: 50%;
-    height: 475px;
+    height: 445px;
     background-color: powderblue;
 }
-
-/*
-#firstPic{
-    transform: translate(550%, -42%);
-    position: relative;
-    z-index: 3;
-}
-#secondPic{
-    transform: translate(450%, -40%);
-    position: relative;
-    z-index: 2;
-}
-#thirdPic{
-    transform: translate(370%, 40%);
-    position: relative;
-    z-index: 1;
-}
-#fourthPic{
-    transform: translate(530%,-70%);
-    position: relative;
-    z-index: 0;
-}
-*/
 
 input{
     border-radius: 40px;
@@ -114,6 +92,7 @@ input{
     width: 180px;
     margin: 10px;
     padding: 10px;
+    margin-bottom:20px;
 }
 
     
@@ -139,19 +118,29 @@ input{
     text-align: center;
 }
 .centerImg{
-    width: 5%;
-    height: 5%;
+    width: 10%;
+    height: 10%;
+    min-width: 70px;
+    min-height: 60px;
+    max-width: 130px;
+    max-height: 110px;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 .centerTxt{
     text-align: center;
+    /*display: flex;
+    flex-direction: column;*/
 }
 
 .centerTxt h3{
     padding: 10px;
-    margin:10px;
+    
+}
+h3{
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
 }
 .centerTxt h4{
     padding: 10px;
@@ -162,36 +151,29 @@ input{
     height: 1.7vh;
 }
 .right{
-    float: right;
-    clear: right;
+    float: left;
+    width: 55%;
+    height: 394px;
+    background-color: powderblue;
 }
 
 .left{
+    padding: 1em;
+    float: left;
+    width: 45%;
+    background-color: yellow;
+}
+.left img{
+    width:60%;
+    height:40%;
+}
+#shape{
+    width: 40vw;
+    height: 40vh;
     position: relative;
-    margin-left: auto;
+    transform: translate(-50%, -10%);
 }
-.left > img{
-    width: 28vw;
-    height: 28vh;
-}
-#firstImg{
-    position: relative;
-    top:0;
-    left:0;
-    z-index: -1;
-}
-#secondImg{
-    position: absolute;
-    top: 50%;
-    left: 7%;
-}
-#thirdImg{
-    position: absolute;
-    right: 68%;
-    top: 45%;
-    z-index:-2;
-    opacity: 1;
-}
+
 .pic{
     position:relative;
     margin-top: 5%;
@@ -214,13 +196,16 @@ input{
     left: 7%;
     z-index: -2;
 }
-.row {
+/*
+.row{
     display: flex;
 }
+*/
 .comment{
     width:30vw;
     height:30vh;
 }
+
   /* Create three equal columns that sits next to each other */
 .column {
     flex: 33.33%;
@@ -256,6 +241,17 @@ input{
     #btn{
         display: none;
     }
+    .left{
+        display: none;
+    }
+    .right{
+        float: left;
+        width: 100%;
+        height: auto;
+        padding-bottom: 10px;
+        margin-bottom:10px;
+        background-color: powderblue;
+    }
     .firstDiv{
         padding: 1em;
         float: left;
@@ -284,11 +280,20 @@ input{
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) and (max-width:767px) {
     body{background: purple;}
-    #secondImg, #thirdImg{
-        position: absolute;
-    }
+   
     .pictures, #btn{
         display: none;
+    }
+    .left{
+        display: none;
+    }
+    .right{
+        float: left;
+        width: 100%;
+        height: auto;
+        padding-bottom: 10px;
+        margin-bottom:10px;
+        background-color: powderblue;
     }
     .firstDiv{
         padding: 1em;
@@ -350,6 +355,16 @@ input{
         padding: 10px;
         grid-gap: 2% 20%;
     }
+    .row{
+        display: flex;
+        
+    }
+    .centerTxt{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+   
 } 
  /* Large devices (laptops/desktops, 992px and up) */
  @media only screen and (min-width: 992px) and (max-width:1199px) {
@@ -369,27 +384,18 @@ input{
         position: relative;
         transform: translate(15%, -40%);
     }
+    .row{
+        display: flex;
+    }
+    .centerTxt{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
 }
  /* Extra large devices (large laptops and desktops, 1200px and up) */
  @media only screen and (min-width: 1200px) {
     body{background: pink;}
-    #firstImg{
-       width:20vw;
-    }
-    #secondImg{
-        width: 20vw;
-        position: absolute;
-        top: 26%;
-        left: 5%;
-    }
-    #thirdImg{
-        width:20vw;
-        left: 0%;
-        width: 20vw;
-        position: absolute;
-        opacity: 1;
-        top: 20%;
-    }
     #btn{
         position: absolute;
         top: 3%;
@@ -404,6 +410,15 @@ input{
         height: 150%;
         position: relative;
         transform: translate(40%, -40%);
+    }   
+    .row{
+        display: flex;
+        
+    }
+    .centerTxt{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
     }
 }
 

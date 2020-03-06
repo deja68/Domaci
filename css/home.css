@@ -117,6 +117,40 @@ input{
 .footer{
     text-align: center;
 }
+.footer h3{
+    margin-top: 3rem;
+    margin-bottom: 2px;
+}
+.footer p {
+    margin-bottom: 10px;
+}
+#leftClass{
+    float:left;
+    width: 20%;
+    background-color: aquamarine;
+}
+#leftClass img{
+    width: 30%;
+    position: relative;
+    transform: translate(-120%, -10%);
+}
+#middleClass{
+    float:left;
+    width:50%;
+    background-color: burlywood;
+}
+#rightClass{
+    float:left;
+    width: 30%;
+    background-color: purple;
+}
+#rightClass img{
+    width: 100%;
+    height: 200%;
+    position: relative;
+    transform: translate(50%,-40%);
+    z-index: -1;
+}
 .centerImg{
     width: 10%;
     height: 10%;
@@ -161,11 +195,14 @@ h3{
     padding: 1em;
     float: left;
     width: 45%;
-    background-color: yellow;
+    height: 394px;
+    background-color: lightgray;
 }
-.left img{
-    width:60%;
-    height:40%;
+.left img {
+    width: 100%;
+    height: 200%;
+    position: relative;
+    transform: translate(35%,-30%);
 }
 #shape{
     width: 40vw;
@@ -174,14 +211,6 @@ h3{
     transform: translate(-50%, -10%);
 }
 
-.pic{
-    position:relative;
-    margin-top: 5%;
-}
-.pic > img{
-    width:15vw;
-    height: 25vh;
-}
 #group{
     z-index:-1;   
 }
@@ -196,22 +225,21 @@ h3{
     left: 7%;
     z-index: -2;
 }
-/*
+
 .row{
     display: flex;
-}
-*/
-.comment{
-    width:30vw;
-    height:30vh;
+    flex-wrap: nowrap;
+    justify-content: center;
 }
 
-  /* Create three equal columns that sits next to each other */
+.comment{
+    width:25vw;
+    height: 40vh;
+   
+}
+ 
 .column {
-    flex: 33.33%;
-    justify-content: center;
-    padding: 10px;
-    margin:10px;
+    margin: 1em 20px;
 }
 
 /*
@@ -235,6 +263,27 @@ h3{
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     body{background:lightgrey;}
+    h3{
+        margin-top: 3rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+    .row{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        justify-items: center;
+        flex-direction: column;
+    }
+     
+    .column {
+        margin: 1em 20px;
+        text-align: center;
+        
+    }
+    .column img{
+        width: 15rem ;
+    }
     .pictures{
         display: none;
     }
@@ -271,6 +320,13 @@ h3{
         padding: 10px;
         grid-gap: 2% 10%;
     }
+    #leftClass,#rightClass{
+        display:none;
+    }
+    #middleClass{
+        width:100%;
+        background-color: burlywood;
+    }
     /*
     #secondImg, #thirdImg{
         position: absolute;
@@ -280,7 +336,27 @@ h3{
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) and (max-width:767px) {
     body{background: purple;}
-   
+    h3{
+        margin-top: 3rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+    .row{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        justify-items: center;
+        flex-direction: column;
+    }
+     
+    .column {
+        margin: 1em 20px;
+        text-align: center;
+        
+    }
+    .column img{
+        width: 20rem ;
+    }
     .pictures, #btn{
         display: none;
     }
@@ -317,8 +393,13 @@ h3{
         padding: 10px;
         grid-gap: 2% 18%;
     }
-    
-   
+    #leftClass,#rightClass{
+        display:none;
+    }
+    #middleClass{
+        width:100%;
+        background-color: burlywood;
+    }
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width:991px) {
@@ -356,13 +437,17 @@ h3{
         grid-gap: 2% 20%;
     }
     .row{
-        display: flex;
-        
+        display: flex;  
     }
     .centerTxt{
         text-align: center;
         display: flex;
         flex-direction: column;
+    }
+    #leftClass img {
+        width: 30%;
+        position: relative;
+        transform: translate(-120%, 20%);
     }
    
 } 

@@ -3,9 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About-Web page</title>
+
+    <!--
+        SEO
+    -->
+    <meta name="description" content="More about our work">
+    <meta name="keywords" content="task, task management">
+    <meta name="author" content="Andrea Jolicic">
+    <title>Task Management | About</title>
+    <link rel="stylesheet" href="../css/about.css">
+    <link href="https://fonts.googleapis.com/css?family=Lora|Muli&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>About us</h1>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="current"><a href="about.html">About</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="branding">
+        <h1><span class="highlight">Task Management</span></h1>
+    </div>
+    <section id="newsletter">
+        <div class="container">
+            <h1>Subscribe to our newsletter</h1>
+            <form>
+                <input type="email" placeholder="Enter you email"> 
+                <button type="submit" class="button_1">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="main">
+        <div class="container">
+           <article id="main-col"> 
+                <h1 class="page-title">About Us</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tristique vitae justo eget fringilla. Aenean a volutpat augue. Aenean vehicula velit ante, vitae condimentum ipsum facilisis pellentesque. Integer viverra tristique massa quis scelerisque. Aenean vitae placerat neque, at luctus nisl. Duis eget fringilla urna. Vivamus blandit congue sollicitudin. Phasellus nisi quam, placerat sed velit eleifend, hendrerit vestibulum enim.
+                </p>
+                <p class="dark">
+                    Proin purus augue, pretium ac tellus ac, posuere vehicula neque. Phasellus iaculis pellentesque pellentesque. Cras eget justo varius, tristique elit a, consequat sapien. Curabitur sed tristique est. Nunc malesuada nibh sapien, eu bibendum sem luctus a. Nunc a ultrices nisi. Morbi felis ex, imperdiet in fringilla sed, suscipit a sapien. Nullam nibh justo, ullamcorper id tortor ut, laoreet laoreet augue. Integer rutrum ornare risus eget tristique.
+                </p>
+           </article>
+
+           <aside id="sidebar">
+                <div class="dark">
+                    <h3>What We Do</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tristique vitae justo eget fringilla. Aenean a volutpat augue. Aenean vehicula velit ante, vitae condimentum ipsum facilisis pellentesque. Integer viverra tristique massa quis scelerisque. Aenean vitae placerat neque, at luctus nisl. Duis eget fringilla urna. Vivamus blandit congue sollicitudin.
+                    </p>
+                </div>
+           </aside>
+        </div>
+    </section>
+
+    <footer>
+        <div id="middleClass">
+            <h3>Get better work done</h3>
+            <p>See why millions across 195 <br> countries  use dash</p>
+            <br>
+            <form>
+                <input type="email" name="companyEmail" placeholder="name@company.name">
+                <button>Try for free</button>
+            </form>
+        </div>
+    </footer>
 </body>
 </html>

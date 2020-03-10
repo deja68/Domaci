@@ -1,0 +1,168 @@
+body{
+    font-family: 'Muli', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+/* Global */
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+#branding{
+    text-align: center;
+
+}
+.dark{
+    padding: 15px;
+    background: #3A4151;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Header */
+header{
+    background-color: #3A4151;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #FB5253 3px solid;
+}
+
+header a{
+    color:white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header nav{
+    float:left;
+    margin-top: 10px;
+}
+
+header .current a{
+    color: #FB5253;
+    font-weight: bold;
+}
+
+header a:hover{
+    color: #cccccc;
+    font-weight: bold;
+}
+
+
+/* Newsletter */
+#newsletter{
+    padding: 15px;
+    color: #ffffff;
+    background-color: #3A4151;;
+}
+
+#newsletter h1{
+    float: left;
+}
+
+#newsletter form{
+    float: right;
+    margin-top: 15px;
+}
+
+#newsletter input[type="email"] {
+    padding:4px;
+    width: 250px;
+}
+
+
+/* Sidebar */
+aside#sidebar{
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+}
+
+aside#sidebar .quote input, 
+aside#sidebar .quote textarea{
+    width: 90%;
+    padding: 5px;
+}
+
+/* Article */
+article#main-col{
+    float: left;
+    width: 65%;
+}
+
+/* Services */
+ul#services li{
+    list-style: none;
+    padding: 20px;
+    border: #cccccc solid 1px;
+    margin-bottom: 5px;
+    background: #e6e6e6;
+}
+
+footer{
+    padding: 20px;
+    margin-top: 20px;
+    color: black;
+    background-color: #ffffff;
+    text-align: center;
+}
+button{
+    border-radius: 40px;
+    padding: 10px;
+    background-color: #FB5253;
+    color: white;
+    border:none;
+}
+input{
+    border-radius: 40px;
+    border:none;
+    box-shadow: 5px 5px lightgray;
+    height:30px;
+    width: 180px;
+    margin: 10px;
+    padding: 10px;
+    margin-bottom:20px;
+}
+
+/* Media queries*/
+@media (max-width:768px){
+    header nav,
+    header nav li,
+    #newsletter h1,
+    #newsletter form,
+    article#main-col,
+    aside#sidebar{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    header{
+        padding-bottom: 20px;
+    }
+    #newsletter form input[type="email"], .quote input, .quote textarea{
+        width:100%;
+        margin-bottom: 5px;
+    }
+    #newsletter button, .quote button {
+        display: block;
+        width: 100%;
+    }
+}

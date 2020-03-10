@@ -4,14 +4,39 @@
     box-sizing: border-box;
 }
 body{
-    padding: 1em ;
+    font-family: 'Muli', sans-serif;
+    padding: 1em 1em 0 1em ;
     margin: 1em  ;
     overflow-x: hidden;
+    margin-bottom: 0;
+    border:  none;
+    padding-bottom: 0;
+}
+.container{
+    margin-bottom: 0;
+    border:  none;
+    padding-bottom:0;
 }
 .flex-container{
    display: flex;
    justify-content: space-between;
    flex-direction: row;
+}
+
+header a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header .current a{
+    color: #FB5253;
+    font-weight: bold;
+}
+
+header a:hover{
+    color: #cccccc;
+    font-weight: bold;
 }
 .nav{
     display: flex;
@@ -88,6 +113,7 @@ button{
 input{
     border-radius: 40px;
     border:none;
+    box-shadow: 5px 5px lightgray;
     height:30px;
     width: 180px;
     margin: 10px;
@@ -133,9 +159,10 @@ input{
 #leftClass img{
     width: 30%;
     position: relative;
-    transform: translate(-160%, -10%);
+    transform: translate(-160%, 25%);
 }
 #middleClass{
+    margin-top: 60px;
     float:left;
     width:50%;
     
@@ -148,9 +175,9 @@ input{
 }
 #rightClass img{
     width: 100%;
-    height: 200%;
+    height: 180%;
     position: relative;
-    transform: translate(50%,-40%);
+    transform: translate(50%,-35%);
     z-index: -1;
 }
 .centerImg{

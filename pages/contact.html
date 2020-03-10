@@ -3,9 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Web page</title>
+
+    <!--
+        SEO
+    -->
+    <meta name="description" content="contact info ">
+    <meta name="keywords" content="task management, contact">
+    <meta name="author" content="Andrea Jolicic">
+    <title>Task management | Contact</title>
+    <link rel="stylesheet" href="../css/contact.css">
 </head>
 <body>
-    <h1>Contact us</h1>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li class="current"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="branding">
+        <h1><span class="highlight">Task Management</span></h1>
+    </div>
+
+    <section id="newsletter">
+        <div class="container">
+            <h1>Subscribe to our newsletter</h1>
+            <form>
+                <input type="email" placeholder="Enter you email"> 
+                <button type="submit" class="button_1">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="main">
+        <div class="container">
+           <article id="main-col"> 
+                <h1 class="page-title">Tasks</h1>
+                <ul id="services">
+                    <li>
+                        <h3>Task1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tristique vitae justo eget fringilla. Aenean a volutpat augue. Aenean vehicula velit ante, vitae condimentum ipsum facilisis pellentesque. Integer viverra tristique massa quis scelerisque. Aenean vitae placerat neque, at luctus nisl</p>
+                        
+                    </li>
+                    <li>
+                        <h3>Task2</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tristique vitae justo eget fringilla. Aenean a volutpat augue. Aenean vehicula velit ante, vitae condimentum ipsum facilisis pellentesque. Integer viverra tristique massa quis scelerisque. Aenean vitae placerat neque, at luctus nisl</p>
+                       
+                    </li>
+                    <li>
+                        <h3>Task3</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tristique vitae justo eget fringilla. Aenean a volutpat augue. Aenean vehicula velit ante, vitae condimentum ipsum facilisis pellentesque. Integer viverra tristique massa quis scelerisque. Aenean vitae placerat neque, at luctus nisl</p>
+                       
+                    </li>
+                </ul>
+           </article>
+
+           <aside id="sidebar">
+                <div class="dark">
+                    <h3>Get A Quote</h3>
+                    <form class="quote">
+                        <div>
+                            <label>Name</label> <br>
+                            <input type="text" placeholder="Name">
+                        </div>
+                        <div>
+                            <label>Email</label><br>
+                            <input type="email" placeholder="email address">
+                        </div>
+                        <div>
+                            <label>Message</label><br>
+                            <textarea placeholder="Message"></textarea>
+                        </div>
+                        <button class="button_1" type="submit">Send</button>
+                    </form>
+                </div>
+           </aside>
+        </div>
+    </section>
+    
+    <footer>
+        <div id="middleClass">
+            <h3>Get better work done</h3>
+            <p>See why millions across 195 <br> countries  use dash</p>
+            <br>
+            <form>
+                <input type="email" name="companyEmail" placeholder="name@company.name">
+                <button>Try for free</button>
+            </form>
+        </div>
+    </footer>
 </body>
 </html>
